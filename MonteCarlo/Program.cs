@@ -10,6 +10,13 @@ namespace MonteCarlo
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("Enter a number:");
+
+            Random rnd = new Random();
+
+            int size = int.Parse(Console.ReadLine());
+            int[] arrays = new int[size];
+
         }
     }
 }
