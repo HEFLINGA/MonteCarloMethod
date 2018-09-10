@@ -12,8 +12,9 @@ namespace MonteCarlo
         {
             Console.WriteLine("Input array size");
             int input = int.Parse(Console.ReadLine());
-            XY hyp = new XY();
             Random rnd = new Random();
+            XY hyp = new XY();
+            
 
             double[,] arr = new double[input, 2];
             int len = arr.Length - input;
