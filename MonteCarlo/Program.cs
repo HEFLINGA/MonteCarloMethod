@@ -42,14 +42,14 @@ namespace MonteCarlo
             // Step 5 of Monte Carlo
             double coord = 0;
             double length = len;
-            double counter1 = counter;
-            coord += counter1 / length;
-            double coord1 = coord * 4;
+            double total = counter;
+            coord += total / length;
+            double coordTotal = coord * 4;
 
             // Writes all results of counter, result, and difference from pi
             Console.WriteLine($"Counter: {counter}");
-            Console.WriteLine($"Result: {coord1}");
-            double diff = Math.Abs(coord1 - Math.PI);
+            Console.WriteLine($"Result: {coordTotal}");
+            double diff = Math.Abs(coordTotal - Math.PI);
             Console.WriteLine($"Difference: {diff}");
 
             Console.WriteLine($" ");
